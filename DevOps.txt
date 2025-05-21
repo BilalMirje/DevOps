@@ -1,0 +1,99 @@
+Title : Introduction to git and version control
+
+step 1: install git and configure it with your username and email
+	-> $ git config --global user.name "bilal"
+	-> $ git config --global user.email "abc@gmail.com"
+	-> $ git config --list
+
+step 2: Initialize a git repository
+	-> $ mkdir 64
+	-> $ ls
+	-> $ cd 64
+	-> $ git init
+
+step 3: create new repository
+	-> $ git clone <repo-url>.git
+	-> $ cd <Repo-name>
+	-> $ ls
+	-> $ cat README.md
+	-> $ touch exp1.txt
+	-> $ls
+
+
+	-> $ git add .
+	-> $ git commit -m "initial commit"
+	-> $ git remote set-url origin <url>
+	-> $ git push origin main
+
+step 4: Make changes
+	-> $ git pull origin main
+
+step 5: create new branch
+	-> $ git branch
+	-> $ git branch DevOps
+	-> $ git branch
+	-> $ git status
+	-> $ git checkout DevOps
+
+step 6: Merge branch
+	-> $ git merge origin/DevOps
+	
+step 7: Delete branch
+	-> $ git branch -D DevOps
+
+-------------------------------------------------------------------------------
+
+Title : Collaboration with GitHub/GitLab
+
+step 1 : Create repository in GitHub
+step 2 : Collaborate with partner
+	->setting>collaborators
+step 3 : commit changes
+step 4 : create fork (collaborator partner)
+step 5 : create pull request 
+step 6 : merge pull request 
+
+-------------------------------------------------------------------------------
+
+Title : GitFlow WorkFlow
+
+step 1 : cd myproject 
+step 2 : git clone <repo-url>
+step 3 : cd <repo-name>
+step 4 : git branch
+step 5 : git checkout -b develop
+step 6 : git branch 
+step 7 : touch add.java
+step 8 : gedit add.java
+step 9 : git remote set url origin <url>
+step 10 : git push origin develop
+step 11 : git add add.java
+step 12 : git status
+step 13 : git commit -m "To get addition of numbers"
+step 14 : git push origin develop
+step 15 : git branch
+step 16 : git branch feature
+step 17 : git checkout feature 
+step 18 : git push origin feature
+step 19 : git branch
+step 20 : git merge feature/develop
+step 21 : git branch release
+step 22 : git merge release/main
+
+-------------------------------------------------------------------------------
+
+Title : Docker
+wsl install
+docker -v
+docker run -d -p 80:80 -name webserver nginx
+docker image ls
+docker container ls 
+docker info
+docker inspect webserver
+
+-------------------------------------------------------------------------------
+
+Title : Jenkins Git 
+
+
+
