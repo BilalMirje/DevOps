@@ -1,0 +1,18 @@
+
+
+CREATE DATABASE studentdb;
+USE studentdb;
+
+-- Single table for student + course + payments
+CREATE TABLE student_fees (
+    Rno INT PRIMARY KEY,
+    Sname VARCHAR(50),
+    CName VARCHAR(50),
+    CFees DECIMAL(10,2),
+    PFees DECIMAL(10,2) -- Total Paid Fees
+);
+
+-- Sample data
+INSERT INTO student_fees VALUES 
+(101, 'Bilal', 'Java', 10000, 5000),
+(102, 'Ravi', 'Python', 12000, 4000);
