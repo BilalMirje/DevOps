@@ -1,0 +1,47 @@
+Exp_10 
+
+CREATE DATABASE CourseDB;
+GO
+
+USE CourseDB;
+GO
+
+CREATE TABLE Course (
+    Cno INT PRIMARY KEY,
+    CName VARCHAR(100),
+    Duration VARCHAR(50),
+    Fees INT
+);
+
+Add Dataset to Your Project
+In Solution Explorer:
+
+Right-click project > Add > New Item
+
+Choose DataSet, name it DataSet1.xsd → Add
+
+It opens the designer:
+
+Right-click inside > Add > TableAdapter
+
+Choose New Connection → Select SQL Server and your CourseDB
+
+Choose the Course table → Finish
+
+Now you'll see Course DataTable in the designer.
+
+To Open the Data Sources Window:
+Go to the menu bar.
+
+Click on Data (not View).
+
+Then click on Show Data Sources.
+
+
+Once it’s open:
+
+You will see the Course table from DataSet1.
+
+Drag the Course table from the Data Sources panel and drop it on the form to auto-generate controls like DataGridView, BindingSource, etc.
+
+
